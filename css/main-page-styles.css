@@ -481,6 +481,13 @@ body {
   margin-top: 43%;
 }
 
+.container2 {
+  max-width: 1450px;
+  width: 95%;
+  top: 215%;
+  position: absolute;
+}
+
 .slider-wrapper {
   position: relative;
   margin: 0 auto;
@@ -715,3 +722,110 @@ body {
   left: 10%;
   color: #323637;
 }
+
+.content_h5{
+font-size: 200%;
+position: absolute;
+top: 205%;
+left:10%;
+color: #323637;
+}
+
+.content_h4-3 h5{
+  font-size: 200%;
+  position: absolute;
+  top: 247%;
+  left:10%;
+  color: #323637;
+  }
+
+  .content_h4-3 p1{
+    font-size: 140%;
+    position: absolute;
+    top: 255%;
+    left:12%;
+    color: #323637;
+    }
+
+  .btn_adv{
+    position: absolute;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    top: 261%;
+    left: 10%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: #1F92BB;
+    text-align: center;
+    padding: 10px 10px;
+  }
+
+  .btn_adv:hover{
+    background-color: #1F92BB;
+    color: white;
+  }
+
+  .content_h4-3 p2{
+    font-size: 140%;
+    position: absolute;
+    top: 255%;
+    left:45%;
+    color: #323637;
+    }
+
+    .content_h4-3 p3{
+      font-size: 140%;
+      position: absolute;
+      top: 255%;
+      left:70%;
+      color: #323637;
+      }
+
+      .btn_adv2{
+        position: absolute;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 300px;
+        top: 261%;
+        left: 40%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        text-decoration: none;
+        color: #1F92BB;
+        text-align: center;
+        padding: 10px 10px;
+      }
+    
+      .btn_adv2:hover{
+        background-color: #1F92BB;
+        color: white;
+      }
+
+      .btn_adv3{
+        position: absolute;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 300px;
+        top: 261%;
+        left: 67.5%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        text-decoration: none;
+        color: #1F92BB;
+        text-align: center;
+        padding: 10px 10px;
+      }
+    
+      .btn_adv3:hover{
+        background-color: #1F92BB;
+        color: white;
+      }
+
+      .content_h4-3 img{
+        position: absolute;
+        display: flex;
+        width: 700px;
+        height: 467px;
+      }
