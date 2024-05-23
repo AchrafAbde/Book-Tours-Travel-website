@@ -21,7 +21,7 @@
         <input type="radio" name="slider" id="close-btn">
         <ul class="nav-links">
           <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-          <li><a href="#">Home</a></li>
+          <li><a href="main page.html">Home</a></li>
           <li>
             <a href="#" class="desktop-item">Destinations</a>
             <input type="checkbox" id="showMega">
@@ -34,7 +34,7 @@
                 <div class="row">
                   <header style="color: #1F92BB;">Africa</header>
                   <ul class="mega-links">
-                    <li><a href="#">Morocco</a></li>
+                    <li><a href="morocco_trips.html">Morocco</a></li>
                     <li><a href="#">Egypt</a></li>
                     <li><a href="#">South Africa</a></li>
                   </ul>
@@ -42,7 +42,7 @@
                 <div class="row">
                   <header style="color: #1F92BB;">Asia</header>
                   <ul class="mega-links">
-                    <li><a href="#">Japan</a></li>
+                    <li><a href="japan_trips.html">Japan</a></li>
                     <li><a href="#">China</a></li>
                     <li><a href="#">Thailand</a></li>
                   </ul>
@@ -50,7 +50,7 @@
                 <div class="row">
                   <header style="color: #1F92BB;">Europe</header>
                   <ul class="mega-links">
-                    <li><a href="#">Turkey</a></li>
+                    <li><a href="turkey_trips.html">Turkey</a></li>
                     <li><a href="#">Italy</a></li>
                     <li><a href="#">Greece</a></li>
                   </ul>
@@ -71,26 +71,26 @@
                 <div class="row">
                   <header>Bicycle</header>
                   <ul class="mega-links">
-                    <li><img src="../images/poser-ses-roues-terres-noires-1920x1080-f50_50.jpg" alt=""></li>
+                    <li><a href=""><img src="../images/poser-ses-roues-terres-noires-1920x1080-f50_50.jpg" alt=""></a></li>
                   </ul>
                 </div>
                 <div class="row">
                   <header>Overland Truck</header>
                   <ul class="mega-links">
-                    <li><img src="../images/Overlands-hero.jpg" alt=""></li>
+                    <li><a href=""><img src="../images/Overlands-hero.jpg" alt=""></a></li>
                   </ul>
                 </div>
                 <div class="row">
                   <header>Hiking & Trekking</header>
                   <ul class="mega-links">
-                    <li><img src="../images/Intrepid-Travel-Peru_quarry-trail_60.jpg" alt=""></li>
+                    <li><a href=""><img src="../images/Intrepid-Travel-Peru_quarry-trail_60.jpg" alt=""></a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </li>
           <li>
-            <a href="" class="desktop-item">Offers</a>
+            <a href="offers.html" class="desktop-item">Offers</a>
           </li>
           <li><a href="#" id="contact-link">Contact</a></li>
         </ul>
@@ -165,7 +165,7 @@
       <a href="turkey_trip_page.html" class="travel-link">
       <button class="view-tour-button">View tour</button>
       </a>
-      <button class="wishlist-button">&#x2661;</button>
+      <button class="wishlist-button" class="add-to-wishlist-btn" onclick="addToWishlist('Absolutely Turkey', '../images/turkey trip/145658_5f6746603ebd5.jpg', '7 days', '4.2','Istanbul, Ankara, Lake Tuz, Nevsehir, Kaymakli, Goreme, Cavusin, Urgup, Uchisar, Avanos, Sultanhani, Pamukkale, Selcuk, Izmir, Pergamum, Troy, Gallipoli, Istanbul', '963')">&#x2661;</button>
     </div>
   </div>
 </div>
@@ -198,7 +198,62 @@
     <input type="date" id="departure-date">
   </div>
 </div>
-
+<footer>
+  <section class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul class="links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Compressions</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="links">
+          <li><a href="#">Free Designs</a></li>
+          <li><a href="#">Latest Designs</a></li>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Popular Designs</a></li>
+          <li><a href="#">Art Skills</a></li>
+          <li><a href="#">New Uploads</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="links">
+          <li><a href="#">Customer Agreement</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">GDPR</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Media Kit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>
+          Subscribe to our newsletter for a weekly dose
+          of news, updates, helpful tips, and
+          exclusive offers.
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+          <a href="https://www.facebook.com/achraf.abderrazik/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com/Achrafabderraz2"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/achraf-abderrazik/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/AchrafAbde"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
 <script src="../js/filter.js"></script>
 <script src="../js/contact us.js"></script>
 <script src="../js/profile-picture.js"></script>

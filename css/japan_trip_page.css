@@ -954,3 +954,99 @@ body {
 
 
 /* ------------------------------------ */
+
+.footer {
+  position: absolute;
+  bottom: -400%;
+  left: 0;
+  width: 100%;
+  background: #e6e6e6;
+  border-radius: 6px;
+}
+
+.footer .footer-row {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+}
+
+.footer-row .footer-col h4 {
+  color: #323637;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #323637;
+}
+
+.footer-col .links li a:hover {
+  color: #323637;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #323637;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #1F92BB;
+  caret-color: #323637;
+  color: #323637;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #323637;
+}
+
+.footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #1F92BB;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #505557;
+}
+
+.footer-col .icons i:hover {
+  color: #1F92BB;
+}

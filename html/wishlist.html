@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/countries_trips.css">
-    <title>Morocco - Trips & Tours</title>
+    <link rel="stylesheet" href="../css/wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ASHTRAVEL - Book Tours & Travel</title>
 </head>
 <body>
   <header>
@@ -94,6 +96,10 @@
           </li>
           <li><a href="#" id="contact-link">Contact</a></li>
         </ul>
+        <div>
+          <a href="wishlist.html" class="card"><img src="../credit-card-bank-card-debit-card-money-card-card-vector-material-removebg-preview.png" alt=""></a>
+        </div>
+        
         <div class="profile-picture-container">
           <img class="profile-logo" src="../images/computer-icons-user-clip-art-user.jpg" alt="">
           <img id="profile-picture" src="../images/default-profile.png" alt="Profile Picture">
@@ -125,137 +131,76 @@
       </form>
     </div>
   </div>
-  <div>
-    <img class="img-head" src="../images/morocco trip/New folder/we-are-travel-girls-morocco-trip.jpg" alt="">
-  </div>
-  <div class="head-text">
-    <h1 class="h1-1">Morocco Tours & Trips</h1>
-    <p class="p-1">Whether you're trekking the Atlas Mountains with a Berber guide or riding a camel through the Sahara dunes, Morocco offers countless wonders to explore. Wander through the blue streets of Chefchaouen, discover treasures in Fes's Medina, experience the cultural blend in Tangier, or admire the beautiful mosques in Casablanca. Whether you're arriving from Spain or visiting Marrakesh, a tour of Morocco will leave you eager to return to this enchanting Land of Contrasts.</p>
-    <hr class="divider">
- </div>
-
- <div class="travel-card">
-  <div class="card-left">
-    <img src="../images/morocco trip/New folder/11540_84d86d.jpg" alt="Exotic Morocco" class="card-image">
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZLkc0sEBymWkjznZ9idqNIT6n8_rTrA&ehbc=2E312F" width="320" height="240"></iframe>
-    </div>
-  </div>
-  <div class="card-right">
-    <div class="card-header">
-      <a href="morocco_trip_page.html" class="travel-link">
-        <div class="discount-badge">-45% OFF</div>
-      <h2 class="name-h2">Exotic Morocco (4 Star Hotels)</h2>
-      <div class="rating">
-        <span class="star">★ 4.8</span>
-      </div>
-    </div>
-    <ul class="details">
-      <li><strong>Destinations:</strong> Marrakesh, Essaouira, Casablanca, Rabat, Chefchaouen, Fes, Merzouga</li>
-      <li><strong>Age Range:</strong> 18 to 59 year olds</li>
-      <li><strong>Operated in:</strong> English</li>
-      <li><strong>Operator:</strong> Travel Talk</li>
-    </ul>
-    <div class="pricing">
-      <span class="duration">Duration: <strong>10 days</strong></span>
-      <span class="price">From <span class="old-price">$1,956</span > <strong class="new-price">$1,076</strong></span>
-      <span class="discount">You save $880</span>
-    </div>
-    <div class="card-buttons">
-      <button class="view-tour-button">View tour</button>
-    </a>
-      <button class="wishlist-button" class="add-to-wishlist-btn" onclick="addToWishlist('Exotic Morocco (4 Star Hotels)', '../images/morocco trip/9357_6352a2d87657e.jpg', '10 days', '4.8','Marrakesh, Essaouira, Casablanca, Rabat, Chefchaouen, Fes, Merzouga, Marrakesh', '1076')">&#x2661;</button>
-    </div>
-  </div>
-</div>
 
 
-<div>
-<div class="vertical-line"></div>
-</div>
+  <div class="wishlist-container">
 
-<div class="filter-container">
-  <h1>Applied filters</h1>
-  <div class="filter-item">
-    <label for="">Sort by:</label>
-    <select id="sort-select">
-      <option value="popularity">Popularity: Most popular</option>
-      <option value="price_low_high">Price: Low to High</option>
-      <option value="price_high_low">Price: High to Low</option>
-      <option value="rating">Rating</option>
-    </select>
+    <div id="total-price-container"></div>
+    <button class="book-now-btn" onclick="bookNow()">Book Now</button>
   </div>
 
-  <div class="filter-item">
-    <label for="length-range">Length:</label>
-    <input type="range" id="length-range" min="1" max="21" step="1" value="1">
-    <span id="length-value">1 day</span>
-  </div>
 
-  <div class="filter-item">
-    <label>Departure date:</label>
-    <input type="date" id="departure-date">
-  </div>
-</div>
-<footer>
-  <section class="footer">
-    <div class="footer-row">
-      <div class="footer-col">
-        <h4>Info</h4>
-        <ul class="links">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Compressions</a></li>
-          <li><a href="#">Customers</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Collection</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul class="links">
-          <li><a href="#">Free Designs</a></li>
-          <li><a href="#">Latest Designs</a></li>
-          <li><a href="#">Themes</a></li>
-          <li><a href="#">Popular Designs</a></li>
-          <li><a href="#">Art Skills</a></li>
-          <li><a href="#">New Uploads</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <ul class="links">
-          <li><a href="#">Customer Agreement</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">GDPR</a></li>
-          <li><a href="#">Security</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Media Kit</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Newsletter</h4>
-        <p>
-          Subscribe to our newsletter for a weekly dose
-          of news, updates, helpful tips, and
-          exclusive offers.
-        </p>
-        <form action="#">
-          <input type="text" placeholder="Your email" required>
-          <button type="submit">SUBSCRIBE</button>
-        </form>
-        <div class="icons">
-          <a href="https://www.facebook.com/achraf.abderrazik/"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://x.com/Achrafabderraz2"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/achraf-abderrazik/"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/AchrafAbde"><i class="fa-brands fa-github"></i></a>
+  <footer>
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul class="links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Compressions</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Collection</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="links">
+            <li><a href="#">Free Designs</a></li>
+            <li><a href="#">Latest Designs</a></li>
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">Popular Designs</a></li>
+            <li><a href="#">Art Skills</a></li>
+            <li><a href="#">New Uploads</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul class="links">
+            <li><a href="#">Customer Agreement</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">GDPR</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Media Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe to our newsletter for a weekly dose
+            of news, updates, helpful tips, and
+            exclusive offers.
+          </p>
+          <form action="#">
+            <input type="text" placeholder="Your email" required>
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+          <div class="icons">
+            <a href="https://www.facebook.com/achraf.abderrazik/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/Achrafabderraz2"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/achraf-abderrazik/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/AchrafAbde"><i class="fa-brands fa-github"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-</footer>
-<script src="../js/filter.js"></script>
-<script src="../js/contact us.js"></script>
-<script src="../js/profile-picture.js"></script>
-</body>
-</html>
-
+    </section>
+  </footer>
+  <script src="../js/wishlist.js"></script>
+    <script src="../js/slider2.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/contact us.js"></script>
+    <script src="../js/profile-picture.js"></script>
+  </body>
+  </html>
+  

@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main-page-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>ASHTRAVEL - Book Tours & Travel</title>
 </head>
 <body>
@@ -94,6 +95,10 @@
           </li>
           <li><a href="#" id="contact-link">Contact</a></li>
         </ul>
+        <div>
+          <a href="wishlist.html" class="card"><img src="../credit-card-bank-card-debit-card-money-card-card-vector-material-removebg-preview.png" alt=""></a>
+        </div>
+        
         <div class="profile-picture-container">
           <img class="profile-logo" src="../images/computer-icons-user-clip-art-user.jpg" alt="">
           <img id="profile-picture" src="../images/default-profile.png" alt="Profile Picture">
@@ -108,6 +113,8 @@
       </div>
     </nav>
   </header>
+  
+
 
 	<div id="contact-popup" class="contact-popup">
     <div class="contact-popup-content">
@@ -179,7 +186,7 @@
             </a>
           </li>
           <li class="image-item">
-            <a href="morocco_trips.html">
+            <a href="">
               <img src="../images/slide2/52032115e0cd7540233daed6978ea659.jpg" alt="img-1">
               <h4 class="image-caption">Egypt</h4>
             </a>
@@ -240,18 +247,32 @@
       <h4 class="h4-2">Recently Viewed Adventures</h4>
     </div>
 
-    <div class="travel-card">
+    <div class="travel-card" data-productid="1" data-productname="Exotic Morocco" data-price="1076">
       <a href="morocco_trip_page.html" class="travel-link">
         <div class="discount-badge">-45% OFF</div>
-        <img src="../images/morocco trip/New folder/6348_f081da.jpg" alt="Travel Image" class="travel-image">
+        <img src="../images/morocco trip/9357_6352a2d87657e.jpg" alt="Travel Image" class="travel-image">
         <div class="travel-details">
           <h3 class="travel-name">Exotic Morocco (4 Star Hotels)</h3>
           <p class="duration">10 days &#x2022;<span class="rating"> 4.8 <span class="star">&#9733;</span></span></p>
           <p class="price">From <span class="original-price">$1,956</span> <span class="discounted-price">$1,076</span></p>
         </div>
       </a>
-      <button class="wishlist-button">&#x2661;</button>
+      <button class="wishlist-button" class="add-to-wishlist-btn" onclick="addToWishlist('Exotic Morocco (4 Star Hotels)', '../images/morocco trip/9357_6352a2d87657e.jpg', '10 days', '4.8','Marrakesh, Essaouira, Casablanca, Rabat, Chefchaouen, Fes, Merzouga, Marrakesh', '1076')">&#x2661;</button>
     </div>
+    
+    <div class="travel-card2" data-productid="2" data-productname="Absolutely Turkey" data-price="963">
+      <a href="turkey_trip_page.html" class="travel-link">
+        <div class="discount-badge">-50% OFF</div>
+        <img src="../images/turkey trip/145658_5f6746603ebd5.jpg" alt="Travel Image" class="travel-image">
+        <div class="travel-details">
+          <h3 class="travel-name">Absolutely Turkey</h3>
+          <p class="duration">7 days &#x2022;<span class="rating"> 4.2 <span class="star">&#9733;</span></span></p>
+          <p class="price">From <span class="original-price">$1,925</span> <span class="discounted-price">$963</span></p>
+        </div>
+      </a>
+      <button class="wishlist-button" class="add-to-wishlist-btn" onclick="addToWishlist('Absolutely Turkey', '../images/turkey trip/145658_5f6746603ebd5.jpg', '7 days', '4.2','Istanbul, Ankara, Lake Tuz, Nevsehir, Kaymakli, Goreme, Cavusin, Urgup, Uchisar, Avanos, Sultanhani, Pamukkale, Selcuk, Izmir, Pergamum, Troy, Gallipoli, Istanbul', '963')">&#x2661;</button>
+    </div>
+    
 
     <div>
       <h5 class="content_h5">Adventures For Everyone</h5>
@@ -297,7 +318,63 @@
       <a href="" class="btn_adv3"><img src="../images/adv/85769_83ff3c2e.jpg" alt="" >South Africa</a>
     </div>
 
-
+<footer>
+  <section class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul class="links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Compressions</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="links">
+          <li><a href="#">Free Designs</a></li>
+          <li><a href="#">Latest Designs</a></li>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Popular Designs</a></li>
+          <li><a href="#">Art Skills</a></li>
+          <li><a href="#">New Uploads</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul class="links">
+          <li><a href="#">Customer Agreement</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">GDPR</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Media Kit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>
+          Subscribe to our newsletter for a weekly dose
+          of news, updates, helpful tips, and
+          exclusive offers.
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+          <a href="https://www.facebook.com/achraf.abderrazik/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com/Achrafabderraz2"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/achraf-abderrazik/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/AchrafAbde"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+<script src="../js/wishlist.js"></script>
   <script src="../js/slider2.js"></script>
   <script src="../js/slider.js"></script>
   <script src="../js/contact us.js"></script>
