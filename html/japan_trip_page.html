@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/japan_trip_page.css">
+    <title>Morocco - Trips & Tours</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="wrapper">
+        <section>
+          <div class="content">
+            <h2>ASHTRAVEL</h2>
+            <h2>ASHTRAVEL</h2>
+          </div>
+        </section>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#" class="desktop-item">Destinations</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Destinations</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="../images/a73cbfbcf18054bf31ee42e6453c5d94.jpg" alt="">
+                </div>
+                <div class="row">
+                  <header style="color: #1F92BB;">Africa</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Morocco</a></li>
+                    <li><a href="#">Egypt</a></li>
+                    <li><a href="#">South Africa</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header style="color: #1F92BB;">Asia</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Japan</a></li>
+                    <li><a href="#">China</a></li>
+                    <li><a href="#">Thailand</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header style="color: #1F92BB;">Europe</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Turkey</a></li>
+                    <li><a href="#">Italy</a></li>
+                    <li><a href="#">Greece</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Adventure Styles</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Adventure Styles</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row" style="  background-color: #F1F2F3; border-radius: 5%;padding: 8px ;">
+                  <h1>Adventure Styles</h1>
+                  <p style="line-height: 1.5">From wild escapades to serene moments, find your perfect adventure. Choose or customize your package and create memories that stand out.</p>
+                  <!-- <a class="advbutton">All Adventure Styles</a> -->
+                </div>
+                <div class="row">
+                  <header>Bicycle</header>
+                  <ul class="mega-links">
+                    <li><img src="../images/poser-ses-roues-terres-noires-1920x1080-f50_50.jpg" alt=""></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Overland Truck</header>
+                  <ul class="mega-links">
+                    <li><img src="../images/Overlands-hero.jpg" alt=""></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Hiking & Trekking</header>
+                  <ul class="mega-links">
+                    <li><img src="../images/Intrepid-Travel-Peru_quarry-trail_60.jpg" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="" class="desktop-item">Offers</a>
+          </li>
+          <li><a href="#" id="contact-link">Contact</a></li>
+        </ul>
+        <div class="profile-picture-container">
+          <img class="profile-logo" src="../images/computer-icons-user-clip-art-user.jpg" alt="">
+          <img id="profile-picture" src="../images/default-profile.png" alt="Profile Picture">
+          <input type="file" id="profile-picture-input" accept="image/*">
+          <div class="dropdown-menu" id="dropdown-menu">
+            <ul>
+              <li id="change-picture">Change Profile Picture</li>
+              <li href="../html/login.html" id="logout">Log Out</li>
+            </ul>
+          </div>
+        </div>        
+      </div>
+    </nav>
+  </header>
+
+  <div id="contact-popup" class="contact-popup">
+    <div class="contact-popup-content">
+      <form action="https://api.web3forms.com/submit" method="POST" class="form">
+        <h2>CONTACT US</h2>
+        <input type="hidden" name="access_key" value="28bf24aa-4edf-4dd1-84f9-1d0e3aa97131">
+        <p type="Name:"><input type="text" name="name" placeholder="Write your name here.." required></p>
+        <p type="Email:"><input type="email" name="email" placeholder="Let us know how to contact you back.." required></p>
+        <p type="Message:"><input name="message" placeholder="What would you like to tell us.." required></p>
+        <button type="submit" onclick="closeContactPopup()">Send Message</button>
+        <div>
+          <span class="fa fa-phone"></span>0643186913
+          <span class="fa fa-envelope-o"></span> achraf.abderrazik10gmail.com
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div>
+    <h1 class="content_h1"> <strong>Japan Express: Osaka to Tokyo</strong></h1>
+    <p class="content_p">9 days &#x2022;<span class="rating"> 4.5 <span class="star">&#9733;</span><span><br>From <strong>Osaka</strong> to <strong>Tokyo</strong></span></span> </p>
+  </div>
+
+  <div class="slider">
+    <div class="list">
+        <div class="item">
+            <img src="../images/japan trip/117986_90931be5.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../images/japan trip/256614_d843de1e.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../images/japan trip/5526_2da71cb1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../images/japan trip/5526_5dfb0117748c0.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../images/japan trip/5526_907fd5c7.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="../images/japan trip/5526_d65c794d.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="../images/japan trip/5526_e4804b1b.jpg" alt="">
+      </div>
+    </div>  
+    <div class="buttons">
+        <button id="prev"><</button>
+        <button id="next">></button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-content">
+      <div class="card-title">
+        <h3>Price <br><span>-15%</span></h3>
+        <p class="original-price"">From $3,099 </p>
+        <p><strong>US $3,144</strong></p>
+      </div>
+      <a href=""><button class="btn">Book Now</button></a>
+    </div>
+  </div>
+  <div>
+    <h3 class="content_2">Places You’ll See </h3>
+  </div>
+  
+  <div class="container">
+    <div class="slider-wrapper">
+      <ul class="image-list">
+        <li class="image-item">
+            <img src="../images/japan trip/New folder/13850_a9ff2b.jpg" alt="img-1">
+            <h4 class="image-caption" >Osaka</h4>
+        </li>
+        <li class="image-item">
+            <img src="../images/japan trip/New folder/13851_5d6394.jpg" alt="img-1">
+            <h4 class="image-caption">Koya-san
+            </h4>
+        </li>
+        <li class="image-item">
+            <img src="../images/japan trip/New folder/17244_cdb58e.jpg" alt="img-1">
+            <h4 class="image-caption">Hiroshima</h4>
+        </li>
+        <li class="image-item">
+            <img src="../images/japan trip/New folder/4458_293fc3.jpg" alt="img-1">
+            <h4 class="image-caption">Kyoto</h4>
+        </li>
+        <li class="image-item">
+            <img src="../images/japan trip/New folder/4469_6dee66.jpg" alt="img-1">
+            <h4 class="image-caption">Hakone</h4>
+        </li>
+        <li class="image-item">
+            <img src="../images/japan trip/New folder/4472_b479ff.jpg" alt="img-1">
+            <h4 class="image-caption">Fuji</h4>
+        </li>
+        <li class="image-item">
+          <img src="../images/japan trip/New folder/4475_e445cc.jpg" alt="img-1">
+          <h4 class="image-caption">Tokyo</h4>
+      </li>
+      </ul>
+    </div>
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZuAP30yF7lAG9QEldQ0NbAmqsAnTeys&ehbc=2E312F" width="1100" height="480"></iframe>
+  </div>
+
+  <div class="Highlights">
+    <h1 style="font-size: 170%; color: #323637;">Highlights <br></h1>
+    <p>&#x2713; Spend a night in an incredible mountain monastery <br></p>
+    <p>&#x2713; Visit the sacred island of Miyajima and see the torii gate <br></p>
+    <p>&#x2713; Take a walk in the geisha district of Gion <br> </p>
+    <p>&#x2713; Soak in the natural hot springs in Hakone <br></p>
+    <p>&#x2713; Savour local Japanese food and travel by bullet train</p>
+  </div>
+
+  <div>
+    <ul class="timeline">
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 1</span>
+            <span class="time-wrapper"><span class="time">Osaka</span></span>
+          </div>
+          <div class="desc">Arrive at any time in Osaka. To make the most of this vibrant city, consider booking pre-accommodation. In the evening, meet your CEO and group for a welcome moment. <br>
+
+            Accommodation: Holiday Inn Express Osaka City Centre - Midosuji (or similar).</div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 2</span>
+            <span class="time-wrapper"><span class="time">Osaka/Kōyasan</span></span>
+          </div>
+          <div class="desc">Travel to Mount Koya, the heart of Japanese Buddhism. Ascend by train, funicular, and bus to the mountaintop temple. Enjoy a traditional shojin ryori dinner and relax in a yukata. <br>
+
+            Accommodation: Sekishoin (or similar). <br>
+            Meals: Breakfast, Dinner <br>
+            Transport: Train (3 hours) <br>
+            Included Activities: Overnight in Mount Kōya Temple
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 3</span>
+            <span class="time-wrapper"><span class="time">Kōyasan/Hiroshima</span></span>
+          </div>
+          <div class="desc">Observe morning prayers and have a vegetarian breakfast. Travel to Hiroshima, a city marked by history, via bus, train, and funicular. <br>
+
+            Accommodation: Toyoko Inn Hiroshimaeki Shinkansenguchi Ⅱ (or similar). <br>
+            Meals: Breakfast <br>
+            Transport: Bullet train (5 hours) <br>
+            Included Activities: Oku-no-in Cemetery Visit
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 4</span>
+            <span class="time-wrapper"><span class="time">Hiroshima</span></span>
+          </div>
+          <div class="desc">Visit the Peace Park and Memorial Museum in Hiroshima. In the afternoon, take a ferry to Miyajima Island to see the famous floating Torii Gate. Optionally, hike around Mt Misen. <br>
+
+            Accommodation: Toyoko Inn Hiroshimaeki Shinkansenguchi Ⅱ (or similar).
+            Transport: Ferry to Miyajima <br>
+            Included Activities: Hiroshima Park and Peace Memorial, Miyajima Island Visit
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 5</span>
+            <span class="time-wrapper"><span class="time">Hiroshima/Kyoto</span></span>
+          </div>
+          <div class="desc">Travel to Kyoto and explore the city. Visit Nijo Castle and its gardens, and take an evening walking tour of the Gion geisha district. <br>
+
+
+            Accommodation: Prince Smart Inn Kyoto Sanjo (or similar). <br>
+            Transport: Bullet train (1.5-2 hours) <br>
+            Included Activities: Gion Walk, Nijo Castle and Gardens Visit
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 6</span>
+            <span class="time-wrapper"><span class="time">Kyoto</span></span>
+          </div>
+          <div class="desc">Visit the Fushimi Inari Taisha shrine and its iconic torii gates. Enjoy free time to shop, stroll along the river, or visit other temples in Kyoto. <br>
+
+            Accommodation: Prince Smart Inn Kyoto Sanjo (or similar). <br>
+            Included Activities: Fushimi Inari Taisha Shrine Visit
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 7</span>
+            <span class="time-wrapper"><span class="time">Kyoto/Hakone</span></span>
+          </div>
+          <div class="desc">Travel to Hakone and take a boat ride on Lake Ashino-ko, hoping for a view of Mt Fuji. Enjoy a traditional kaiseki meal and soak in the onsen.
+
+            Accommodation: TKP Hotel & Resort Rekutore Hakone Gora (or similar). <br>
+            Meals: Dinner <br>
+            Transport: Bullet train (3 hours), local bus (30 minutes) <br>
+            Included Activities: Lake Ashino-ko Boat Ride, Traditional Kaiseki Meal
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 8</span>
+            <span class="time-wrapper"><span class="time">Hakone/Tokyo</span></span>
+          </div>
+          <div class="desc">Travel to Tokyo, arriving before noon. Spend the day exploring the city's diverse neighborhoods, parks, and shopping areas.
+<br>
+            Accommodation: Shinjuku Washington Hotel (or similar).br
+            Meals: Breakfast <br>
+            Transport: Bullet train (2 hours)
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 9</span>
+            <span class="time-wrapper"><span class="time">Tokyo</span></span>
+          </div>
+          <div class="desc">Depart at any time. Consider booking additional nights to further explore Tokyo's vibrant culture and attractions. <br>
+            Meals: None
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 10</span>
+            <span class="time-wrapper"><span class="time">Marrakech</span></span>
+          </div>
+          <div class="desc">Enjoy your final breakfast, bid farewell to your travel mates, and check out of the hotel by 11:00am. Look forward to your next adventure with Travel Talk!
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+
+  <script src="../js/slider2.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/contact us.js"></script>
+<script src="../js/profile-picture.js"></script>
+</body>
+</html>

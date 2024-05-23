@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/turkey_trip_page.css">
+    <title>Morocco - Trips & Tours</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="wrapper">
+        <section>
+          <div class="content">
+            <h2>ASHTRAVEL</h2>
+            <h2>ASHTRAVEL</h2>
+          </div>
+        </section>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#" class="desktop-item">Destinations</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Destinations</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="../images/a73cbfbcf18054bf31ee42e6453c5d94.jpg" alt="">
+                </div>
+                <div class="row">
+                  <header style="color: #1F92BB;">Africa</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Morocco</a></li>
+                    <li><a href="#">Egypt</a></li>
+                    <li><a href="#">South Africa</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header style="color: #1F92BB;">Asia</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Japan</a></li>
+                    <li><a href="#">China</a></li>
+                    <li><a href="#">Thailand</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header style="color: #1F92BB;">Europe</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Turkey</a></li>
+                    <li><a href="#">Italy</a></li>
+                    <li><a href="#">Greece</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Adventure Styles</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Adventure Styles</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row" style="  background-color: #F1F2F3; border-radius: 5%;padding: 8px ;">
+                  <h1>Adventure Styles</h1>
+                  <p style="line-height: 1.5">From wild escapades to serene moments, find your perfect adventure. Choose or customize your package and create memories that stand out.</p>
+                  <!-- <a class="advbutton">All Adventure Styles</a> -->
+                </div>
+                <div class="row">
+                  <header>Bicycle</header>
+                  <ul class="mega-links">
+                    <li><img src="../images/poser-ses-roues-terres-noires-1920x1080-f50_50.jpg" alt=""></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Overland Truck</header>
+                  <ul class="mega-links">
+                    <li><img src="../images/Overlands-hero.jpg" alt=""></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Hiking & Trekking</header>
+                  <ul class="mega-links">
+                    <li><img src="../images/Intrepid-Travel-Peru_quarry-trail_60.jpg" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="" class="desktop-item">Offers</a>
+          </li>
+          <li><a href="#" id="contact-link">Contact</a></li>
+        </ul>
+        <div class="profile-picture-container">
+          <img class="profile-logo" src="../images/computer-icons-user-clip-art-user.jpg" alt="">
+          <img id="profile-picture" src="../images/default-profile.png" alt="Profile Picture">
+          <input type="file" id="profile-picture-input" accept="image/*">
+          <div class="dropdown-menu" id="dropdown-menu">
+            <ul>
+              <li id="change-picture">Change Profile Picture</li>
+              <li href="../html/login.html" id="logout">Log Out</li>
+            </ul>
+          </div>
+        </div>        
+      </div>
+    </nav>
+  </header>
+
+  <div id="contact-popup" class="contact-popup">
+    <div class="contact-popup-content">
+      <form action="https://api.web3forms.com/submit" method="POST" class="form">
+        <h2>CONTACT US</h2>
+        <input type="hidden" name="access_key" value="28bf24aa-4edf-4dd1-84f9-1d0e3aa97131">
+        <p type="Name:"><input type="text" name="name" placeholder="Write your name here.." required></p>
+        <p type="Email:"><input type="email" name="email" placeholder="Let us know how to contact you back.." required></p>
+        <p type="Message:"><input name="message" placeholder="What would you like to tell us.." required></p>
+        <button type="submit" onclick="closeContactPopup()">Send Message</button>
+        <div>
+          <span class="fa fa-phone"></span>0643186913
+          <span class="fa fa-envelope-o"></span> achraf.abderrazik10gmail.com
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div>
+    <h1 class="content_h1"> <strong>Absolutely Turkey</strong></h1>
+    <p class="content_p">7 days &#x2022;<span class="rating"> 4.2 <span class="star">&#9733;</span><span><br>Start and end in  <strong>Istanbul</strong></span></span> </p>
+  </div>
+
+  <div class="slider">
+    <div class="list">
+        <div class="item">
+            <img src="../images/turkey trip/145658_27612234.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../images/turkey trip/145658_5f6746603ebd4.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../images/turkey trip/145658_5f6746603ebd5 (1).jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../images/turkey trip/145658_5f6746603ebd5.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="../images/turkey trip/145658_5f6746603ebdb.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="../images/turkey trip/145658_611af276aff81.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="../images/turkey trip/145658_611af32aae955.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="../images/turkey trip/145658_611af32aae95b.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="../images/turkey trip/145658_66128e1ded887.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="../images/turkey trip/145658_66128e1ded889.jpg" alt="">
+      </div>
+    </div>  
+    <div class="buttons">
+        <button id="prev"><</button>
+        <button id="next">></button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-content">
+      <div class="card-title">
+        <h3>Price <br><span>-50%</span></h3>
+        <p class="original-price"">From $1,925 </p>
+        <p><strong>US $963</strong></p>
+      </div>
+      <a href=""><button class="btn">Book Now</button></a>
+    </div>
+  </div>
+  <div>
+    <h3 class="content_2">Customer Photos</h3>
+  </div>
+  
+  <div class="container">
+    <div class="slider-wrapper">
+      <ul class="image-list">
+        <li class="image-item">
+            <img src="../images/turkey trip/New folder/226358_04467cd8.jpg" alt="img-1">
+
+        </li>
+        <li class="image-item">
+            <img src="../images/turkey trip/New folder/226358_0e4351a1.jpg" alt="img-1">
+
+        </li>
+        <li class="image-item">
+            <img src="../images/turkey trip/New folder/226358_3ca09e7b.jpg" alt="img-1">
+        </li>
+        <li class="image-item">
+            <img src="../images/turkey trip/New folder/226358_606cb7bf.jpg" alt="img-1">
+
+        </li>
+        <li class="image-item">
+            <img src="../images/turkey trip/New folder/226358_ee21868d.jpg" alt="img-1">
+
+        </li>
+        <li class="image-item">
+            <img src="../images/turkey trip/New folder/290918_37a2838a.jpg" alt="img-1">
+
+        </li>
+      </ul>
+    </div>
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1pdC7AnzFyafItxeHDqnMqcIkbnYJukI&ehbc=2E312F" width="1100" height="480"></iframe>
+  </div>
+
+  <div class="Highlights">
+    <h1 style="font-size: 170%; color: #323637;">Itinerary <br></h1>
+    <p>&#x2713; Start and end in Istanbul! With the In-depth Cultural tour Absolutely Turkey, you have a 7 days tour package taking you through Istanbul, Turkey and 16 other destinations in Turkey. Absolutely Turkey includes accommodation in a hotel as well as an expert guide, meals, transport and more.</p>
+  </div>
+
+  <div>
+    <ul class="timeline">
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 1</span>
+            <span class="time-wrapper"><span class="time">Istanbul - Ankara</span></span>
+          </div>
+          <div class="desc">Depart from Istanbul to Ankara, crossing the intercontinental bridge. Arrive in Ankara for dinner at the hotel.
+
+            Overnight: Ankara
+            Meals: Dinner</div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 2</span>
+            <span class="time-wrapper"><span class="time">Ankara - Cappadocia via Salt Lake</span></span>
+          </div>
+          <div class="desc">Explore Ankara, visiting the Museum of Anatolian Civilizations and Ataturk Mausoleum. Travel to Cappadocia, stopping at an underground city en route.
+
+            Overnight: Cappadocia
+            Meals: Breakfast, Dinner
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 3</span>
+            <span class="time-wrapper"><span class="time">Cappadocia</span></span>
+          </div>
+          <div class="desc">Tour Cappadocia’s unique landscapes, including the fairy chimneys, Goreme Valley, Uçhisar, and Derbent valley. Visit artisan workshops.
+
+            Overnight: Cappadocia
+            Meals: Breakfast, Dinner
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 4</span>
+            <span class="time-wrapper"><span class="time">Cappadocia- Sultanhani - Pamukkale</span></span>
+          </div>
+          <div class="desc">Depart for Pamukkale, stopping at the Sultanhan Caravanserai. Enjoy free time at Pamukkale's hot springs and travertine pools.
+
+            Overnight: Pamukkale
+            Meals: Breakfast, Dinner
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 5</span>
+            <span class="time-wrapper"><span class="time">Pamukkale – Ephesus – İzmir</span></span>
+          </div>
+          <div class="desc">Visit Ephesus, exploring its ancient ruins and the House of the Virgin Mary. Continue to İzmir, stopping at a leather production center.
+
+            Overnight: İzmir
+            Meals: Breakfast, Dinner
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 6</span>
+            <span class="time-wrapper"><span class="time">zmir - Pergamon – Troy – Çanakkale</span></span>
+          </div>
+          <div class="desc">Travel to Pergamon to visit the Asclepion ruins, then continue to Troy to explore its archaeological sites. Proceed to Çanakkale.
+
+            Overnight: Çanakkale
+            Meals: Breakfast, Dinner
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">DAY 7</span>
+            <span class="time-wrapper"><span class="time">Gallipoli – AnzacCove – Istanbul</span></span>
+          </div>
+          <div class="desc">Cross the Dardanelles Strait to visit Gallipoli’s WWI battlefields. Return to Istanbul in the evening, with drop-off at your hotel.
+
+            Overnight: N/A
+            Meals: Breakfast
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <script src="../js/slider2.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/contact us.js"></script>
+<script src="../js/profile-picture.js"></script>
+</body>
+</html>
