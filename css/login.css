@@ -43,7 +43,7 @@ nav .wrapper {
 
 .content h2:nth-child(1) {
 	color: transparent;
-	-webkit-text-stroke: 2px #4070d1;
+	-webkit-text-stroke: 2px #1F92BB;
 }
 
 .content h2:nth-child(2) {
@@ -296,4 +296,9 @@ input {
 	transform: translateX(20%);
 }
 
+.message {
+	color: red;
+	font-size: 12px;
+	margin-top: 8px;
+}
 

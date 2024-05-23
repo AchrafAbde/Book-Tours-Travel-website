@@ -15,6 +15,8 @@ signInButton.addEventListener('click', () => {
 // Select the forms
 const signUpForm = document.querySelector('.sign-up-container form');
 const signInForm = document.querySelector('.sign-in-container form');
+const signUpMessage = document.getElementById('signUpMessage');
+const signInMessage = document.getElementById('signInMessage');
 
 // Register a new user
 signUpForm.addEventListener('submit', (event) => {
@@ -28,7 +30,7 @@ signUpForm.addEventListener('submit', (event) => {
         const userExists = users.some(user => user.email === email);
 
         if (userExists) {
-            alert('User already exists!');
+            signUpMessage.textContent = 'User already exists!';
         } else {
             users.push({ name, email, password });
             localStorage.setItem('users', JSON.stringify(users));
@@ -37,7 +39,7 @@ signUpForm.addEventListener('submit', (event) => {
             container.classList.remove("right-panel-active"); // Switch to login form
         }
     } else {
-        alert('Please enter all infos.');
+        signUpMessage.textContent = 'Please enter all informations!';
     }
 });
 
@@ -57,9 +59,9 @@ signInForm.addEventListener('submit', (event) => {
             signInForm.reset();
             window.location.href = 'main page.html'; // Redirect to main page
         } else {
-            alert('Invalid email or password.');
+            signInMessage.textContent = 'Invalid email or password. Try again!';
         }
     } else {
-        alert('Please enter all infos.');
+        signInMessage.textContent = 'Please enter all informations!';
     }
 });
