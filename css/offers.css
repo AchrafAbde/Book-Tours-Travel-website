@@ -769,8 +769,7 @@ body {
   width: 100%;
   left: 0%;
   right: 0%;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+  filter: brightness(0.4);
 }
 
 /* ------------------------------------ */
