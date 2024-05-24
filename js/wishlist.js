@@ -12,12 +12,29 @@ function addToWishlist(name, imageUrl, duration, rating, destinations, price) {
     };
 
     const userWishlist = JSON.parse(localStorage.getItem(`wishlist_${loggedInUser}`)) || [];
+    
+    // Check if the item already exists in the wishlist
+    const existingItemIndex = userWishlist.findIndex(item => 
+      item.name === wishlistItem.name && 
+      item.imageUrl === wishlistItem.imageUrl && 
+      item.duration === wishlistItem.duration &&
+      item.rating === wishlistItem.rating &&
+      item.destinations === wishlistItem.destinations &&
+      item.price === wishlistItem.price
+    );
+
+    if (existingItemIndex !== -1) {
+      alert('This travel is already added to your wishlist.');
+      return;
+    }
+
     userWishlist.push(wishlistItem);
     localStorage.setItem(`wishlist_${loggedInUser}`, JSON.stringify(userWishlist));
   } else {
     console.log('User not logged in. Cannot add item to wishlist.');
   }
 }
+
 
 
 
@@ -47,9 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
       totalPrice += parseFloat(item.price);
     });
   
-    const totalPriceElement = document.createElement('p');
-    totalPriceElement.textContent = `Total Price: ${totalPrice}`;
-    wishlistContainer.appendChild(totalPriceElement);
+    const totalPriceElement = document.getElementById('wishlist-total-price');
+    totalPriceElement.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
   } else {
     console.log('User not logged in. Cannot display wishlist.');
   }
@@ -62,5 +78,6 @@ function deleteTravelItem(userKey, index) {
   location.reload();
 }
 function bookNow() {
-  window.location.href = 'checkout.html'; // Redirect to checkout page
+  window.location.href = 'checkout.html'; 
 }
+

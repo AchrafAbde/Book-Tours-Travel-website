@@ -1,14 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <link rel="stylesheet" href="../css/main-page-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>ASHTRAVEL - Book Tours & Travel</title>
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="wrapper">
+        <section>
+          <div class="content">
+            <h2>ASHTRAVEL</h2>
+            <h2>ASHTRAVEL</h2>
+          </div>
+        </section>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li><a href="main page.html">Home</a></li>
+          <li>
+            <a href="#" class="desktop-item">Destinations</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Destinations</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="../images/a73cbfbcf18054bf31ee42e6453c5d94.jpg" alt="">
+                </div>
+                <div class="row">
+                  <header style="color: #1F92BB;">Africa</header>
+                  <ul class="mega-links">
+                    <li><a href="morocco_trips.html">Morocco</a></li>
+                    <li><a href="#">Egypt</a></li>
+                    <li><a href="#">South Africa</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header style="color: #1F92BB;">Asia</header>
+                  <ul class="mega-links">
+                    <li><a href="japan_trips.html">Japan</a></li>
+                    <li><a href="#">China</a></li>
+                    <li><a href="#">Thailand</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header style="color: #1F92BB;">Europe</header>
+                  <ul class="mega-links">
+                    <li><a href="turkey_trips.html">Turkey</a></li>
+                    <li><a href="#">Italy</a></li>
+                    <li><a href="#">Greece</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Adventure Styles</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Adventure Styles</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row" style="  background-color: #F1F2F3; border-radius: 5%;padding: 8px ;">
+                  <h1>Adventure Styles</h1>
+                  <p style="line-height: 1.5">From wild escapades to serene moments, find your perfect adventure. Choose or customize your package and create memories that stand out.</p>
+                </div>
+                <div class="row">
+                  <header>Bicycle</header>
+                  <ul class="mega-links">
+                    <li><a href=""><img src="../images/poser-ses-roues-terres-noires-1920x1080-f50_50.jpg" alt=""></a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Overland Truck</header>
+                  <ul class="mega-links">
+                    <li><a href=""><img src="../images/Overlands-hero.jpg" alt=""></a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Hiking & Trekking</header>
+                  <ul class="mega-links">
+                    <li><a href=""><img src="../images/Intrepid-Travel-Peru_quarry-trail_60.jpg" alt=""></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="offers.html" class="desktop-item">Offers</a>
+          </li>
+          <li><a href="#" id="contact-link">Contact</a></li>
+        </ul>
+        <div>
+          <a href="wishlist.html" class="card"><img src="../credit-card-bank-card-debit-card-money-card-card-vector-material-removebg-preview.png" alt=""></a>
+        </div>
+        
+        <div class="profile-picture-container">
+          <img class="profile-logo" src="../images/computer-icons-user-clip-art-user.jpg" alt="">
+          <img id="profile-picture" src="../images/default-profile.png" alt="Profile Picture">
+          <input type="file" id="profile-picture-input" accept="image/*">
+          <div class="dropdown-menu" id="dropdown-menu">
+            <ul>
+              <li id="change-picture">Change Profile Picture</li>
+              <li href="../html/login.html" id="logout">Log Out</li>
+            </ul>
+          </div>
+        </div>        
+      </div>
+    </nav>
+  </header>
+
+  <div id="contact-popup" class="contact-popup">
+    <div class="contact-popup-content">
+      <form action="https://api.web3forms.com/submit" method="POST" class="form">
+        <h2>CONTACT US</h2>
+        <input type="hidden" name="access_key" value="28bf24aa-4edf-4dd1-84f9-1d0e3aa97131">
+        <p type="Name:"><input type="text" name="name" placeholder="Write your name here.." required></p>
+        <p type="Email:"><input type="email" name="email" placeholder="Let us know how to contact you back.." required></p>
+        <p type="Message:"><input name="message" placeholder="What would you like to tell us.." required></p>
+        <button type="submit" onclick="closeContactPopup()">Send Message</button>
+        <div>
+          <span class="fa fa-phone"></span>0643186913
+          <span class="fa fa-envelope-o"></span> achraf.abderrazik10gmail.com
+        </div>
+      </form>
+    </div>
+  </div>
+  
   <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
     <img src="../5289675.png" alt="">
 </div>
 
 </body>
+<script src="../js/wishlist.js"></script>
+  <script src="../js/slider2.js"></script>
+  <script src="../js/slider.js"></script>
+  <script src="../js/contact us.js"></script>
+  <script src="../js/profile-picture.js"></script>
 </html>
